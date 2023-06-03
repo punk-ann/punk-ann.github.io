@@ -1,0 +1,288 @@
+body{
+    color: #575e75;
+    background-color: #fff;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+    width: auto !important;
+    min-width: 500px;
+}
+
+
+#header{
+    background-color: #72D2CB;
+    width: 100%;
+    height: min-content;
+    max-height: 5vw;
+    min-height: 105px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#nav-bar{
+    width: auto;
+    display: flex;
+    flex-grow: 2;
+
+}
+#menu{
+    display: none;
+}
+
+#navlist{
+    list-style-type: none;
+    gap: 2%;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+#navlist li{
+    align-items: center;
+    padding: 1.5vw;
+    flex-wrap: wrap;
+    transition-duration: 1s;
+
+}
+
+#navlist li:hover{
+    background-color: #3fbbb3;
+    border-radius: 4px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+li a{
+    font-size: calc(12px + 0.5vw);
+}
+
+#head-img{
+    padding-left: 2vw;
+    width: auto;
+    height: inherit;
+    max-height:5vw;
+    min-height: 100px;
+    flex-grow: 1;
+    
+}
+.logo-img{
+    height: 100%;
+    min-height: 100px;
+    max-height: 5vw;
+    width: auto;
+    overflow: hidden;
+}
+
+.nav-link{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+
+
+/*THE MAIN STARTS HERE */
+
+#main{
+    width: 60vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #72D2CB;
+    border-radius: 13px;
+    margin: 3vw auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+.orange{   
+    font-weight: 700;
+    color: #FC7C37;  
+}
+
+.big{
+    font-size:calc(12px + 1.5vw);
+    padding-bottom: 12px;
+}
+
+.maintext{
+    text-align: center;
+    font-size:calc(12px + 0.7vw);
+    
+
+
+
+}
+.normp{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.imgdiv{
+    justify-content: center;
+    display: flex;
+}
+
+
+/*THE FOOTER*/
+
+#footer{
+    background-color: #72D2CB;
+    width: 100%;
+    color:#fff;
+
+}
+
+#footlist{
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+
+}
+
+.foot-link{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.foot-link:hover{
+    color: #fd8c50;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.remerciation{
+    text-align: center;
+    font-size:calc(12px + 0.1vw);
+    padding: 5px;
+    margin: 0;
+
+}
+
+.simplehr{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    width: 80%;
+}
+
+
+/*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*/
+
+
+
+@media only screen and (max-width: 700px) {
+
+    body { 
+       font-size: 2em; 
+    }
+
+    /*THE HEADER STARTS HERE*/
+
+
+    #header{
+        flex-direction: column;
+        width: 100%;
+        max-height: 80vw;
+        height: auto;
+        position: relative;
+        display: flex;
+        top: 0px;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    #head-img{
+        margin:auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: inherit;
+        max-height:5vw;
+        min-height: 100px;
+        padding: 0;
+        
+    }
+    #nav-bar{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+ 
+    #menu{
+        display: block;
+        width: auto;
+        transition-duration: 1s;
+        font-size: 30px;
+        margin: 0;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        padding: 1.5vw;
+
+      }
+    #menu:hover{
+        background-color: #3fbbb3;
+        border-radius: 0px;
+        padding: 1.5vw;
+    }
+    #navlist{
+        width: auto;
+        background-color: #3fbbb3;
+        padding: 0;
+    }
+    #navlist .show{
+        display: block;
+        flex-direction: column;
+        
+        
+    }
+    #navlist li{
+        width: 100%;
+        background-color: #3fbbb3;
+        padding-left: 40px;
+        
+
+    }
+
+    #navlist li:hover{
+        background-color: #229c94;
+    }
+    .hide{
+        display: none !important;
+    }
+
+
+    /*THE MAIN STARTS HERE*/
+    #main{
+        width: 98%;   
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0 auto;
+    padding:0
+    }
+
+    /*FOOTER*/
+    .simplehr{
+        display: none;
+    }
+ }
